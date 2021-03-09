@@ -1,0 +1,5 @@
+allow from all
+
+RewriteEngine On
+RewriteRule ^(assets) - [L]
+RewriteRule (.*) index.php?path=/$1 [L,NC,QSA]
